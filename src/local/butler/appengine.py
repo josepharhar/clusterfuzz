@@ -87,6 +87,8 @@ def find_sdk_path():
                                     'google_appengine')
   if not os.path.exists(appengine_sdk_path):
     print('App Engine SDK not found. Please run local/install_deps.bash')
+    print('appengine_sdk_path: ' + appengine_sdk_path)
+    print('  google-cloud-sdk-app-engine-go google-cloud-sdk-app-engine-python google-cloud-sdk-app-engine-python-extras libpython2.7-minimal libpython2.7-stdlib python2.7 python2.7-minimal')
     sys.exit(1)
 
   return appengine_sdk_path
